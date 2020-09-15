@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>edu.hm.cs.bka</groupId>
+	<artifactId>hm-kara-blueprint</artifactId>
+	<version>0.2.0-SNAPSHOT</version>
+
+	<packaging>jar</packaging>
+
+	<name>HM-Kara-Blueprint</name>
+	<description>Basisprojekt für HM-Kara-Aufgaben</description>
+
+	<properties>
+		<source.encoding>UTF-8</source.encoding>
+		<project.build.sourceEncoding>${source.encoding}</project.build.sourceEncoding>
+		<commons-lang.version>3.9</commons-lang.version>
+		<junit.version>5.6.0</junit.version>
+		<logback-classic.version>1.2.3</logback-classic.version>
+		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>bka-snapshots</id>
+			<url>http://bka.cs.hm.edu:8080/repository/snapshots/</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>edu.hm.cs.bka</groupId>
+			<artifactId>hm-kara</artifactId>
+			<version>0.2.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>${maven-compiler-plugin.version}</version>
+					<configuration>
+						<source>11</source>
+						<target>11</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>
