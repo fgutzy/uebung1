@@ -1,12 +1,10 @@
 package edu.hm.cs.bka.dev1.hmkara;
 
-import java.io.IOException;
-import static edu.hm.cs.bka.dev1.hmkara.Kara.*;
-
+import static edu.hm.cs.bka.hmkara.Kara.*;
 
 public class Application {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		start();
 		move();
 		move();
