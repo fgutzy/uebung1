@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+	integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+	crossorigin="anonymous">
+<title>Qualitätsübersicht</title>
+</head><body><div class="alert alert-secondary
+			alert-dismissible fade show"
+			role="alert">
+			<strong>Hmm!</strong>			<button type="button" class="close" data-dismiss="alert"
+				aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div><h2>Test Details</h2>
+<table>
+<th>Passed</th><th>Skipped</th><th>Failed</th>
+<tr>
+<td>2</td><td>0</td><td>2</td></tr></table>
+<h3>Testfehler</h3>
+<ul><li><b>LalaTest.java(8):</b> failingTest : <error type="java.lang.RuntimeException">java.lang.RuntimeException
+	at edu.hm.cs.bka.dev1.kara.LalaTest.failingTest(LalaTest.java:8)
+</error></li>
+<li><b>Lala2Test.java(9):</b> failingTest : Is nicht dasselbe ==> expected: <4> but was: <5></li>
+</ul>
+<h2>Code Check Details</h2>
+<table>
+<th>Checker</th><th>Errors</th><th>Severe</th><th>Normal</th><th>Low</th>
+<tr>
+<td>PMD</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr>
+<td>SpotBugs</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+<tr>
+<td>Checkstyle</td><td>7</td><td>0</td><td>0</td><td>0</td></tr>
+</table><h3>ERROR</h3>
+<ul><li><b>Application.java(20):</b> Line has trailing spaces.</li>
+<li><b>Application.java(5):</b> Die Datei enthält Tabulatorzeichen (dies ist das erste Vorkommnen).</li>
+<li><b>Application.java(17):</b> Line has trailing spaces.</li>
+<li><b>Application.java(1):</b> Es fehlt eine package-info.java.</li>
+<li><b>Application.java(5):</b> Es fehlt ein Javadoc-Kommentar.</li>
+<li><b>Application.java(5):</b> Der Parameter args sollte als 'final' deklariert sein.</li>
+<li><b>Application.java(3):</b> Hilfsklassen sollten keinen Standard-Konstruktur und keinen als public deklarierten Konstruktor haben.</li>
+</ul>
+</body>

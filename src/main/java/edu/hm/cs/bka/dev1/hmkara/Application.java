@@ -1,9 +1,5 @@
 package edu.hm.cs.bka.dev1.hmkara;
 
-import static edu.hm.cs.bka.hmkara.Kara.move;
-
-import edu.hm.cs.bka.grading.Grader;
-
 public class Application {
 
 	public static void main(String[] args) {
