@@ -30,6 +30,6 @@ grade:
     - mvn clean pmd:pmd test checkstyle:checkstyle spotbugs:spotbugs exec:java -Dmaven.test.failure.ignore=true
   artifacts:
     paths:
-    - target/grading.md
+    - grading.md
     reports:
       junit: target/surefire-reports/*.xml
