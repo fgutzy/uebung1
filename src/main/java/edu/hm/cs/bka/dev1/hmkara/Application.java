@@ -1,27 +1,29 @@
 package edu.hm.cs.bka.dev1.hmkara;
 
-import static edu.hm.cs.bka.hmkara.Kara.*;
+import static edu.hm.cs.bka.hmkara.Kara.move;
+
+import edu.hm.cs.bka.grading.Grader;
 
 public class Application {
 
 	public static void main(String[] args) {
-		start();
-		move();
-		move();
-		turnLeft();
-		putLeaf();
+//		start();
+//		move();
+//		move();
+//		turnLeft();
 //		putLeaf();
+////		putLeaf();
+////		move();
+////		move();
+//		say(""+isOnLeaf());
+//		turnRight();
+//		turnRight();
+//		move();	
+//		move();
+// 		move();
+//		move();	
 //		move();
 //		move();
-		say(""+isOnLeaf());
-		turnRight();
-		turnRight();
-		move();	
-		move();
-		move();
-		move();	
-		move();
-		move();
 
 	}
 }
