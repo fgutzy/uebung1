@@ -7,14 +7,26 @@ cache:
   paths:
     - .m2/repository/
     - target/
+    
+stages:
+  - check syntax
+  - test and grade
+  - test 
  
 build:
-  stage: build
+  stage: syntax
   script:
     - mvn compile
 
 test:
-  stage: test
+  stage: test and grade
   script:
-    - mvn verify
+    - mvn test
     
+grade:
+  stage: test and grade
+  script: 
+    - mvn clean pmd:pmd test checkstyle:checkstyle spotbugs:spotbugs exec:java -Dmaven.test.failure.ignore=true
+  artifacts:
+    paths:
+    - target/grading.md
