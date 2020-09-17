@@ -18,6 +18,7 @@ build:
   script:
     - mvn compile
 
+
 test:
   stage: test and grade
   script:
@@ -30,3 +31,5 @@ grade:
   artifacts:
     paths:
     - target/grading.md
+    reports:
+      junit: target/surefire-reports/*.xml
