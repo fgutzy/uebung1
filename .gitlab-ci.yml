@@ -14,7 +14,7 @@ stages:
   - test 
  
 build:
-  stage: syntax
+  stage: check syntax
   script:
     - mvn compile
 
