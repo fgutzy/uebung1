@@ -9,12 +9,17 @@ public class Aufgabe1Test {
 
 	@Test
 	public void runs() {
-		World begin = new World("world_b.txt");		
-		TestKaraController t = new TestKaraController(begin);
-		Kara.setController(t);
-		AufgabeMissionImpossible.main(new String[0]);
+		// arrange
+		World begin = new World("world_b.txt");
+		Kara.setController(new TestKaraController(begin));
+
+		// act
+		Aufgabe.main(new String[0]);
+
+		// assert
 		World expected = new World("world_b_solved.txt");
-		Assertions.assertEquals("\n"+begin.asString(), "\n"+expected.asString(), "Kara hat die Aufgabe nicht gelöst!");	
+		Assertions.assertEquals("\n" + begin.asString(), "\n" + expected.asString(),
+				"Kara hat die Aufgabe nicht gelöst!");
 	}
 
 }

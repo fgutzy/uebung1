@@ -1,4 +1,4 @@
 Mission Possible
-Heben Sie das Blatt auf!
+Lassen Sie Kara das Blatt aufheben!
 world_a.txt
 world_b.txt

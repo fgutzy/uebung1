@@ -1,7 +1,7 @@
 import static edu.hm.cs.bka.hmkara.Kara.*;
 
 import edu.hm.cs.bka.hmkara.Kara;
-public class AufgabeMissionImpossible{
+public class Aufgabe{
 
 	public static void main(String[] args) {
 		move();
