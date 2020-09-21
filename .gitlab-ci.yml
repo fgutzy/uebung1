@@ -12,12 +12,12 @@ stages:
   - compile
   - evaluation
 
-build:
+Überprüfe Syntax:
   stage: compile
   script:
     - mvn -U clean compile
 
-grade:
+Erstelle Report:
   stage: evaluation
   script:
     - mvn -U clean verify exec:java -Dmaven.test.failure.ignore=true
@@ -27,12 +27,12 @@ grade:
     reports:
       junit: target/surefire-reports/*.xml
 
-test:
+Überprüfe Lösung (Test):
   stage: evaluation
   script:
     - mvn -U clean test
 
-check:
+Überprüfe Stil (Checkstyle):
   stage: evaluation
   script:
     - mvn -U clean verify -Dmaven.test.failure.ignore=true -Dcheckstyle.failOnViolation=true -Dcheckstyle.violationSeverity=warning
