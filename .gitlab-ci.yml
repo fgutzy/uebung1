@@ -17,7 +17,7 @@ stages:
   script:
     - mvn -U clean compile
 
-Erstelle Report:
+Summary Report:
   stage: evaluation
   script:
     - mvn -U clean verify exec:java -Dmaven.test.failure.ignore=true
@@ -27,12 +27,12 @@ Erstelle Report:
     reports:
       junit: target/surefire-reports/*.xml
 
-Überprüfe Lösung (Test):
+Prüfe Lösung:
   stage: evaluation
   script:
     - mvn -U clean test
 
-Überprüfe Stil (Checkstyle):
+Prüfe Stil:
   stage: evaluation
   script:
     - mvn -U clean verify -Dmaven.test.failure.ignore=true -Dcheckstyle.failOnViolation=true -Dcheckstyle.violationSeverity=warning
