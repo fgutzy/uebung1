@@ -9,27 +9,30 @@ cache:
     - target/
     
 stages:
-  - check syntax
-  - test and grade
-  - test 
- 
+  - compile
+  - evaluate
+
 build:
-  stage: check syntax
+  stage: compile
   script:
-    - mvn compile
+    - mvn -U clean compile
 
-
-test:
-  stage: test and grade
-  script:
-    - mvn test
-    
 grade:
-  stage: test and grade
-  script: 
-    - mvn -U clean pmd:pmd test checkstyle:checkstyle spotbugs:spotbugs exec:java -Dmaven.test.failure.ignore=true
+  stage: evaluation
+  script:
+    - mvn -U clean verify exec:java -Dmaven.test.failure.ignore=true
   artifacts:
     paths:
-    - grading.html
+      - grading.html
     reports:
       junit: target/surefire-reports/*.xml
+
+test:
+  stage: evaluation
+  script:
+    - mvn -U clean test
+
+check:
+  stage: evaluation
+  script:
+    - mvn -U clean verify -Dmaven.test.failure.ignore=true -Dcheckstyle.failOnViolation=true -Dcheckstyle.violationSeverity=warning

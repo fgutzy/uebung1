@@ -1,10 +1,6 @@
-Welt B
-7
-7
-TTTTTTT
-T TCT T
-TTT  TT
-T     T
-T    TT
-TN   TT
-TTTTTTT
+Welt A
+3
+3
+
+ CS
+TTT

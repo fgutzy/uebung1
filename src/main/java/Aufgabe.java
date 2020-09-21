@@ -1,26 +1,20 @@
 import static edu.hm.cs.bka.hmkara.Kara.*;
 
-import edu.hm.cs.bka.hmkara.Kara;
-
 public class Aufgabe {
 
+  /**
+   * Main-Methode.
+   *
+   * @param args not used.
+   */
   public static void main(String[] args) {
-    move();
-    int i = Kara.askNumber("Guess a Number");
-    turnRight();
-    move();
-    move();
-    move();
-    move();
+     move();
     turnLeft();
-    move();
-    move();
     turnLeft();
     move();
     turnRight();
+    turnRight();
     move();
-    pickLeaf();
-    Kara.say("Yay " + i);
   }
 
 
