@@ -10,7 +10,7 @@ cache:
     
 stages:
   - compile
-  - evaluate
+  - evaluation
 
 build:
   stage: compile
