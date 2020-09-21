@@ -1,6 +1,5 @@
 Welt A
 3
 3
-
- CS
-TTT
+C
+N

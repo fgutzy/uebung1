@@ -8,7 +8,7 @@ import edu.hm.cs.bka.hmkara.world.World;
 public class Aufgabe1Test {
 
 	@Test
-	public void runs() {
+	public void checkResultWithout() {
 		// arrange
 		World begin = new World("world_b.txt");
 		Kara.setController(new TestKaraController(begin));
@@ -18,8 +18,10 @@ public class Aufgabe1Test {
 
 		// assert
 		World expected = new World("world_b_solved.txt");
-		Assertions.assertEquals("\n" + begin.asString(), "\n" + expected.asString(),
+		// ignores Kara's position!
+		Assertions.assertEquals("\n" + expected.asString(), "\n" + begin.asString(),
 				"Kara hat die Aufgabe nicht gelöst!");
+
 	}
 
 }

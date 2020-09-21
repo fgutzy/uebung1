@@ -8,14 +8,13 @@ public class Aufgabe {
    * @param args not used.
    */
   public static void main(String[] args) {
-     move();
-    turnLeft();
-    turnLeft();
-    move();
-    turnRight();
     turnRight();
     move();
+    pickLeaf();
+    turnRight();
+    move();
+    turnLeft();
+    move();
+    putLeaf();
   }
-
-
 }
