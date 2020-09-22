@@ -139,11 +139,6 @@
             <artifactId>checkstyle</artifactId>
             <version>8.36</version>
           </dependency>
-          <dependency>
-            <groupId>edu.hm.cs.bka</groupId>
-            <artifactId>java-grading</artifactId>
-            <version>0.1.0-SNAPSHOT</version>
-          </dependency>
         </dependencies>
         <executions>
           <execution>
@@ -155,7 +150,7 @@
           </execution>
         </executions>
         <configuration>
-          <configLocation>google_checks_dev1.xml</configLocation>
+          <configLocation>checkstyle-dev1.xml</configLocation>
           <encoding>UTF-8</encoding>
           <consoleOutput>true</consoleOutput>
           <failsOnError>false</failsOnError>
