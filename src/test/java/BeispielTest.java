@@ -1,11 +1,11 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import edu.hm.cs.bka.hmkara.Kara;
-import edu.hm.cs.bka.hmkara.test.TestKaraController;
-import edu.hm.cs.bka.hmkara.world.World;
+import edu.hm.cs.bka.karalight.Kara;
+import edu.hm.cs.bka.karalight.test.TestKaraController;
+import edu.hm.cs.bka.karalight.world.World;
 
-public class Aufgabe1Test {
+public class BeispielTest {
 
 	@Test
 	public void checkResultWithout() {
@@ -14,7 +14,7 @@ public class Aufgabe1Test {
 		Kara.setController(new TestKaraController(begin));
 
 		// act
-		Aufgabe.main(new String[0]);
+		BeispielProgramm.main(new String[0]);
 
 		// assert
 		World expected = new World("world_b_solved.txt");
