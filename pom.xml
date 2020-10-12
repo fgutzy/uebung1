@@ -6,13 +6,13 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>edu.hm.cs.bka</groupId>
-  <artifactId>karalight-blueprint</artifactId>
+  <artifactId>dev-a1</artifactId>
   <version>0.2.0-SNAPSHOT</version>
 
   <packaging>jar</packaging>
 
-  <name>HM-Kara-Blueprint</name>
-  <description>Basisprojekt für HM-Kara-Aufgaben</description>
+  <name>DEV1-A1</name>
+  <description>Projekt für Aufgabenblatt 1</description>
 
   <properties>
     <source.encoding>UTF-8</source.encoding>

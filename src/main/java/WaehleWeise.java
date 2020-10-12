@@ -3,7 +3,7 @@ import static edu.hm.cs.bka.karalight.Kara.*;
 /**
  * Hauptprogramm. Hier können Sie Kara programmieren.
  */
-public class BeispielProgramm {
+public class WaehleWeise {
 
   /**
    * Main-Methode. Hier können Sie Java programmieren und dabei die folgenden Kara-Befehle direkt
@@ -26,7 +26,5 @@ public class BeispielProgramm {
    */
   public static void main(String[] args) {
     // Programm hier ergänzen!
-
-    move();
   }
 }
