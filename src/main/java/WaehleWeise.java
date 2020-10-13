@@ -16,12 +16,13 @@ public class WaehleWeise {
    * </ul>
    * Zusätzlich stehen Ihnen die folgenden Abfragen zur Verfügung:
    * <ul>
-   *   <li>move() - Kara bewegt sich einen Schritt nach vorn.</li>
-   *   <li>turnRight() bzw. turnLeft() - Kara dreht sich nach rechts bzw. links</li>
-   *   <li>pickLeaf() - Kara nimmt ein Blatt auf (geht nur, wenn eins da ist!)</li>
-   *   <li>putLeaf() - Kara legt ein Blatt ab (geht nur, wenn keins da ist!)</li>
+   *   <li>isMushroomInFront() - liefert WAHR, wenn vor Kara ein Pilz steht</li>
+   *   <li>isTreeInFront() - liefert WAHR, wenn vor Kara ein Baum steht</li>
+   *   <li>isTreeLeft() - liefert WAHR, wenn links von Kara ein Baum steht</li>
+   *   <li>isTreeRight() - liefert WAHR, wenn rechts von Kara ein Baum steht</li>
+   *   <li>isOnLeaf() - liefert WAHR, wenn Kara auf einem Blatt steht</li>
    * </ul>
-   *
+  *
    * @param args not used.
    */
   public static void main(String[] args) {
