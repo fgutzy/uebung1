@@ -3,7 +3,7 @@ import static edu.hm.cs.bka.karalight.Kara.*;
 /**
  * Hauptprogramm. Hier können Sie Kara programmieren.
  */
-public class ErnteUndAussaat {
+public class RahmenZeichnen {
 
   /**
    * Main-Methode. Hier können Sie Java programmieren und dabei die folgenden Kara-Befehle direkt
