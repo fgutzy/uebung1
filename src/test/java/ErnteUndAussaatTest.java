@@ -10,7 +10,7 @@ public class ErnteUndAussaatTest {
   @Test
   public void loeseTypischeWelt() {
     // arrange
-    World begin = new World("EinfachExpected.world");
+    World begin = new World("Einfach.world");
     Kara.setController(new TestKaraController(begin));
 
     // act
@@ -28,7 +28,7 @@ public class ErnteUndAussaatTest {
   @Test
   public void loeseMittigeWelt() {
     // arrange
-    World begin = new World("MittigExpected.world");
+    World begin = new World("Mittig.world");
     Kara.setController(new TestKaraController(begin));
 
     // act
@@ -45,7 +45,7 @@ public class ErnteUndAussaatTest {
   @Test
   public void loeseUmgekehrteWelt() {
     // arrange
-    World begin = new World("ReverseExpected.world");
+    World begin = new World("Reverse.world");
     Kara.setController(new TestKaraController(begin));
 
     // act
