@@ -22,7 +22,7 @@ public class WaehleWeise {
    *   <li>isTreeRight() - liefert WAHR, wenn rechts von Kara ein Baum steht</li>
    *   <li>isOnLeaf() - liefert WAHR, wenn Kara auf einem Blatt steht</li>
    * </ul>
-  *
+   *
    * @param args not used.
    */
   public static void main(String[] args) {

@@ -9,16 +9,16 @@ import edu.hm.cs.bka.karalight.world.World;
 public class WaehleWeiseTest {
 
   @Test
-  public void schiebtPilzeInReihe1() {
+  public void blattObenTest() {
     // arrange
-    World begin = new World("InDieReihe1.world");
+    World begin = new World("BlattOben.world");
     Kara.setController(new TestKaraController(begin));
 
     // act
-    InDieReihe.main(new String[0]);
+    WaehleWeise.main(new String[0]);
 
     // assert
-    World expected = new World("InDieReihe1Expected.world");
+    World expected = new World("BlattObenExpected.world");
     // ignores Kara's position!
     Assertions.assertEquals("\n" + expected.getRepresentation(RepresentationMode.NONE),
         "\n" + begin.getRepresentation(RepresentationMode.NONE),
@@ -26,16 +26,16 @@ public class WaehleWeiseTest {
   }
 
   @Test
-  public void schiebtPilzeInReihe2() {
+  public void blattUntenTest() {
     // arrange
-    World begin = new World("InDieReihe2.world");
+    World begin = new World("BlattUnten.world");
     Kara.setController(new TestKaraController(begin));
 
     // act
-    InDieReihe.main(new String[0]);
+    WaehleWeise.main(new String[0]);
 
     // assert
-    World expected = new World("InDieReihe2Expected.world");
+    World expected = new World("BlattUntenExpected.world");
     // ignores Kara's position!
     Assertions.assertEquals("\n" + expected.getRepresentation(RepresentationMode.NONE),
         "\n" + begin.getRepresentation(RepresentationMode.NONE),
