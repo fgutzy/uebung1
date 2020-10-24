@@ -56,7 +56,7 @@
     <dependency>
       <groupId>edu.hm.cs.bka</groupId>
       <artifactId>karalight</artifactId>
-      <version>0.5.0</version>
+      <version>0.5.1</version>
     </dependency>
     <dependency>
       <groupId>edu.hm.cs.bka</groupId>
