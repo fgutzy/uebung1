@@ -26,6 +26,46 @@ public class RahmenZeichnen {
    * @param args not used.
    */
   public static void main(String[] args) {
-    // Programm hier ergänzen!
-  }
-}
+
+while (!isOnLeaf()) {
+  if (!isOnLeaf()) {
+    putLeaf();
+    move();}}
+
+  turnRight();
+  move();
+
+  while (!isOnLeaf()) {
+      if (!isOnLeaf()) {
+        putLeaf();
+        move();}}
+
+  turnRight();
+  move();
+  turnLeft();
+  move();
+
+    while (!isOnLeaf()) {
+      if (!isOnLeaf()) {
+        putLeaf();
+        move();}}
+    turnLeft();
+    turnLeft();
+    move();
+    turnLeft();
+    move();
+
+    while (!isOnLeaf()) {
+      if (!isOnLeaf()) {
+        putLeaf();
+        move();}}
+
+    turnLeft();
+    move();
+    turnLeft();
+
+
+
+
+
+  }}

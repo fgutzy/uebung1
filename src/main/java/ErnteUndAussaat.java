@@ -26,6 +26,22 @@ public class ErnteUndAussaat {
    * @param args not used.
    */
   public static void main(String[] args) {
-    // Programm hier ergänzen
-  }
-}
+
+    while(!isTreeInFront()){
+      move();
+    }
+turnLeft();
+    turnLeft();
+
+    if(isOnLeaf()){
+      pickLeaf();
+    }
+    else{putLeaf();}
+
+    while (!isTreeInFront()){
+      move();
+        if (!isOnLeaf()){
+          putLeaf();}
+        else{
+          pickLeaf();}}
+          }}

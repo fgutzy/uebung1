@@ -26,6 +26,49 @@ public class WaehleWeise {
    * @param args not used.
    */
   public static void main(String[] args) {
+    boolean oben = false;
+    boolean unten = false;
+
+    turnLeft();
+    move();
+    turnLeft();
+
+if (isTreeInFront())    {
+  oben = true;
+}
+if (!isTreeInFront()){
+  unten = true;
+}
+
+if(oben){
+  turnLeft();
+  move();
+  move();
+  turnLeft();
+  move();
+  move();
+  turnLeft();
+  move();
+  move();
+  turnRight();
+  move();
+  pickLeaf();
+}
+if (unten){
+turnRight();
+turnRight();
+move();
+move();
+turnRight();
+move();
+move();
+turnLeft();
+move();
+pickLeaf();
+
+
+}
+
     // Programm hier ergänzen!
   }
 }
