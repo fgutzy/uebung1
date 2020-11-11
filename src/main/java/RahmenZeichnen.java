@@ -27,30 +27,24 @@ public class RahmenZeichnen {
    */
   public static void main(String[] args) {
 
-while (!isOnLeaf()) {
-  if (!isOnLeaf()) {
-    putLeaf();
-    move();}}
-
-  turnRight();
-  move();
-
-  while (!isOnLeaf()) {
+    while (!isOnLeaf()) {
       if (!isOnLeaf()) {
         putLeaf();
-        move();}}
+        move();
+      }
+    }
 
-  turnRight();
-  move();
-  turnLeft();
-  move();
+    turnRight();
+    move();
 
     while (!isOnLeaf()) {
       if (!isOnLeaf()) {
         putLeaf();
-        move();}}
-    turnLeft();
-    turnLeft();
+        move();
+      }
+    }
+
+    turnRight();
     move();
     turnLeft();
     move();
@@ -58,14 +52,26 @@ while (!isOnLeaf()) {
     while (!isOnLeaf()) {
       if (!isOnLeaf()) {
         putLeaf();
-        move();}}
+        move();
+      }
+    }
+    turnLeft();
+    turnLeft();
+    move();
+    turnLeft();
+    move();
+
+    while (!isOnLeaf()) {
+      if (!isOnLeaf()) {
+        putLeaf();
+        move();
+      }
+    }
 
     turnLeft();
     move();
     turnLeft();
 
 
-
-
-
-  }}
+  }
+}

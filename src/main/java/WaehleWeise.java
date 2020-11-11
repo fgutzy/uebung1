@@ -33,42 +33,41 @@ public class WaehleWeise {
     move();
     turnLeft();
 
-if (isTreeInFront())    {
-  oben = true;
-}
-if (!isTreeInFront()){
-  unten = true;
-}
+    if (isTreeInFront()) {
+      oben = true;
+    }
+    if (!isTreeInFront()) {
+      unten = true;
+    }
 
-if(oben){
-  turnLeft();
-  move();
-  move();
-  turnLeft();
-  move();
-  move();
-  turnLeft();
-  move();
-  move();
-  turnRight();
-  move();
-  pickLeaf();
-}
-if (unten){
-turnRight();
-turnRight();
-move();
-move();
-turnRight();
-move();
-move();
-turnLeft();
-move();
-pickLeaf();
+    if (oben) {
+      turnLeft();
+      move();
+      move();
+      turnLeft();
+      move();
+      move();
+      turnLeft();
+      move();
+      move();
+      turnRight();
+      move();
+      pickLeaf();
+    }
+
+    if (unten) {
+      turnRight();
+      turnRight();
+      move();
+      move();
+      turnRight();
+      move();
+      move();
+      turnLeft();
+      move();
+      pickLeaf();
 
 
-}
-
-    // Programm hier ergänzen!
+    }
   }
 }

@@ -29,56 +29,70 @@ public class InDieReihe {
 
     move();
     turnLeft();
-while (!isOnLeaf()){
-  move();}
-if (isOnLeaf()){
-  turnLeft();
-  turnLeft();}
-while (!isTreeInFront()){
-  move();}
-turnLeft();
-move();
-turnLeft();
-while (!isOnLeaf()){
-  move();}
-turnLeft();
-turnLeft();
-while (!isTreeInFront()){
-  move();}
-turnLeft();
-move();
-turnLeft();
-while (!isOnLeaf()){
-  move();}
-turnLeft();
-turnLeft();
-while (!isTreeInFront()){
-  move();}
-if (isTreeLeft()){
-  turnLeft();}
-else {
-  turnLeft();
-  move();
-  turnLeft();
-  while (!isOnLeaf()) {
-    move();}
-  turnLeft();
-  turnLeft();
-  while (!isTreeInFront()) {
-    move();}
-  turnLeft();
-  move();
-  turnLeft();
-  while (!isOnLeaf()) {
-    move();}
-  turnLeft();
-  turnLeft();
-  while (!isTreeInFront()) {
-    move();}
-  turnLeft();
-  move();
-  turnLeft();
-  while (!isOnLeaf()) {
-    move();}
+    while (!isOnLeaf()) {
+      move();
+    }
+    if (isOnLeaf()) {
+      turnLeft();
+      turnLeft();
+    }
+    while (!isTreeInFront()) {
+      move();
+    }
+    turnLeft();
+    move();
+    turnLeft();
+    while (!isOnLeaf()) {
+      move();
+    }
+    turnLeft();
+    turnLeft();
+    while (!isTreeInFront()) {
+      move();
+    }
+    turnLeft();
+    move();
+    turnLeft();
+    while (!isOnLeaf()) {
+      move();
+    }
+    turnLeft();
+    turnLeft();
+    while (!isTreeInFront()) {
+      move();
+    }
+    if (isTreeLeft()) {
+      turnLeft();
+    } else {
+      turnLeft();
+      move();
+      turnLeft();
+      while (!isOnLeaf()) {
+        move();
+      }
+      turnLeft();
+      turnLeft();
+      while (!isTreeInFront()) {
+        move();
+      }
+      turnLeft();
+      move();
+      turnLeft();
+      while (!isOnLeaf()) {
+        move();
+      }
+      turnLeft();
+      turnLeft();
+      while (!isTreeInFront()) {
+        move();
+      }
+      turnLeft();
+      move();
+      turnLeft();
+      while (!isOnLeaf()) {
+        move();
+      }
 
-}}}
+    }
+  }
+}

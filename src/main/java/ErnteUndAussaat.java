@@ -27,21 +27,25 @@ public class ErnteUndAussaat {
    */
   public static void main(String[] args) {
 
-    while(!isTreeInFront()){
+    while (!isTreeInFront()) {
       move();
     }
-turnLeft();
+    turnLeft();
     turnLeft();
 
-    if(isOnLeaf()){
+    if (isOnLeaf()) {
       pickLeaf();
+    } else {
+      putLeaf();
     }
-    else{putLeaf();}
 
-    while (!isTreeInFront()){
+    while (!isTreeInFront()) {
       move();
-        if (!isOnLeaf()){
-          putLeaf();}
-        else{
-          pickLeaf();}}
-          }}
+      if (!isOnLeaf()) {
+        putLeaf();
+      } else {
+        pickLeaf();
+      }
+    }
+  }
+}
